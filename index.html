@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajesh B | Software Engineer - .NET Developer, ASP.NET MVC, C#, SQL Server</title>
+  <meta name="description" content="Portfolio of Rajesh B, Software Engineer and .NET Developer with 3+ years of experience in ASP.NET MVC/Core, C#, Web API, Entity Framework, SQL Server and Angular.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Profile photo (added) - works alongside style.css */
+    .hero-wrap{display:flex;align-items:center;gap:40px;flex-wrap:wrap-reverse;justify-content:space-between}
+    .hero-text{flex:1 1 420px;min-width:0}
+    .avatar{flex:0 0 auto;width:220px;height:220px;border-radius:50%;overflow:hidden;display:flex;align-items:center;justify-content:center;
+      background:#1f3864;color:#fff;font-size:64px;font-weight:700;border:4px solid rgba(31,56,100,.25);box-shadow:0 8px 24px rgba(0,0,0,.18)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    @media (max-width:640px){.avatar{width:160px;height:160px;font-size:48px;margin:0 auto}.hero-wrap{justify-content:center}}
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <a href="#home" class="logo">Rajesh<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">&#9776;</button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle dark mode">&#9680;</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-wrap">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Rajesh B</h1>
+          <h2>Software Engineer | .NET Developer &mdash; ASP.NET MVC, C#, SQL Server</h2>
+          <p class="lead">I develop and maintain ASP.NET MVC and ASP.NET Core web applications end to end, from responsive front-end UI to SQL Server business logic, for clients in Australia and the United States.</p>
+          <div class="cta">
+            <a href="#projects" class="btn primary">View Projects</a>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
+          </div>
+        </div>
+        <!-- Put your photo in the same folder as this file and name it profile.jpg -->
+        <div class="avatar" aria-label="Photo of Rajesh B">
+          <img src="profile.jpg" alt="Rajesh B, Software Engineer" onerror="this.parentNode.textContent='RB'">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h3 class="section-title">Professional Summary</h3>
+      <div class="about-grid">
+        <p>Software Engineer with 3+ years of experience developing and maintaining ASP.NET MVC and ASP.NET Core web applications end to end, from responsive front-end UI to SQL Server business logic. I've delivered four production applications for clients in Australia and the United States, covering payments, digital marketing, booking systems and student portals.</p>
+        <p>I'm strong in C#, Entity Framework, LINQ, Web API / REST integration, Angular and T-SQL (stored procedures, functions), with hands-on experience in API testing, Agile delivery and CI/CD deployment using Bitbucket and Jenkins. I also use AI tools such as Codex and Claude to speed up analysis, implementation and code review.</p>
+      </div>
+      <ul class="stats">
+        <li><strong>3+</strong><span>Years experience</span></li>
+        <li><strong>4</strong><span>Production apps delivered</span></li>
+        <li><strong>2</strong><span>Countries served (AU, US)</span></li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h3 class="section-title">Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="card">
+          <h4>Languages</h4>
+          <div class="tags"><span>C#</span><span>T-SQL</span><span>TypeScript</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+        <div class="card">
+          <h4>Frameworks &amp; Libraries</h4>
+          <div class="tags"><span>ASP.NET MVC</span><span>ASP.NET Core</span><span>Web API</span><span>Entity Framework</span><span>LINQ</span><span>Angular 13</span><span>jQuery</span><span>AJAX</span><span>Bootstrap</span><span>SignalR</span><span>DataTables</span><span>Kendo UI</span><span>DevExpress</span></div>
+        </div>
+        <div class="card">
+          <h4>Databases</h4>
+          <div class="tags"><span>SQL Server 2019/2022</span><span>MySQL</span><span>Stored Procedures</span><span>User-Defined Functions</span></div>
+        </div>
+        <div class="card">
+          <h4>Tools &amp; DevOps</h4>
+          <div class="tags"><span>Git (Bitbucket)</span><span>Jenkins (CI/CD)</span><span>Visual Studio</span><span>Postman</span><span>Swagger</span><span>IIS 6.0/7.0/10</span></div>
+        </div>
+        <div class="card">
+          <h4>Practices</h4>
+          <div class="tags"><span>OOP</span><span>MVC Architecture</span><span>RESTful API Integration</span><span>API Testing</span><span>Debugging</span><span>SDLC</span><span>Agile</span></div>
+        </div>
+        <div class="card">
+          <h4>AI Tools</h4>
+          <div class="tags"><span>Codex</span><span>Claude</span><span>MCP</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h3 class="section-title">Projects</h3>
+      <div class="project-grid">
+
+        <article class="card project">
+          <span class="badge">Australia &middot; Team of 3 &middot; Aug 2023 - Jan 2026</span>
+          <h4>Market Pro Website</h4>
+          <p>Digital marketing agency platform serving multiple client accounts.</p>
+          <ul>
+            <li>Developed responsive front-end components with DevExpress, jQuery, AJAX and JavaScript</li>
+            <li>Implemented business logic using SQL Server stored procedures and functions with Entity Framework and LINQ, reducing redundant data-access code across modules</li>
+            <li>Tested and validated REST APIs and backend functions with Postman, reducing integration defects reported during QA cycles</li>
+          </ul>
+          <div class="tags"><span>ASP.NET MVC</span><span>C#</span><span>DevExpress</span><span>jQuery</span><span>EF</span><span>LINQ</span><span>SQL Server</span><span>Postman</span></div>
+        </article>
+
+        <article class="card project">
+          <span class="badge">Team of 3 &middot; Jun 2024 - Nov 2024</span>
+          <h4>REVLR &mdash; Club Table Booking App</h4>
+          <p>Booking app with real-time table availability.</p>
+          <ul>
+            <li>Built Angular 13 front-end features using services for real-time table availability and booking updates</li>
+            <li>Integrated REST APIs end to end, connecting booking, payment and notification services</li>
+          </ul>
+          <div class="tags"><span>Angular 13</span><span>TypeScript</span><span>REST APIs</span></div>
+        </article>
+
+        <article class="card project">
+          <span class="badge">Australia &middot; Team of 3 &middot; Aug 2024 - Jan 2026</span>
+          <h4>Market Pay Website</h4>
+          <p>Payments web application supporting multiple payment methods for retail merchants.</p>
+          <ul>
+            <li>Developed, customized and deployed the payments application</li>
+            <li>Developed and maintained transaction and claims modules, including database design and user-defined functions</li>
+            <li>Configured application settings, database backups and transaction reporting with SQL Server functions and stored procedures, improving reporting turnaround for finance teams</li>
+            <li>Built transaction dashboards and reporting screens with Kendo UI and TypeScript</li>
+          </ul>
+          <div class="tags"><span>ASP.NET Core</span><span>C#</span><span>Kendo UI</span><span>TypeScript</span><span>SQL Server</span><span>UDFs</span></div>
+        </article>
+
+        <article class="card project">
+          <span class="badge">United States &middot; Team of 2 &middot; Feb 2026 - Oct 2026</span>
+          <h4>LaunchLife International Website</h4>
+          <p>Student portal deployed for institutions in Canada and the US.</p>
+          <ul>
+            <li>Built the front end of the full-scale portal with Bootstrap, jQuery and JavaScript</li>
+            <li>Developed SQL Server functions and stored procedures supporting enrollment and academic record workflows</li>
+            <li>Tested and validated Canvas LMS API integrations with Postman for reliable data sync</li>
+          </ul>
+          <div class="tags"><span>C#</span><span>Bootstrap</span><span>jQuery</span><span>SQL Server</span><span>Canvas LMS API</span><span>Postman</span></div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h3 class="section-title">Work Experience &amp; Education</h3>
+      <div class="timeline">
+        <div class="item">
+          <h4>Software Engineer, Tender Software India Pvt. Ltd.</h4>
+          <span class="date">Aug 2023 &ndash; Oct 2026 &middot; Puducherry, India</span>
+          <p>Full-stack .NET developer on small Agile teams (2&ndash;3 members), building and maintaining client-facing web applications for clients in Australia and the US. Responsible for front-end development, SQL Server business logic, API integration and testing, and CI/CD deployment via Bitbucket and Jenkins.</p>
+        </div>
+        <div class="item">
+          <h4>Bachelor of Engineering (B.E.), Electronics and Communication Engineering</h4>
+          <span class="date">2020</span>
+          <p>University College of Engineering, BIT Campus, Tiruchirappalli &mdash; 64.41%</p>
+        </div>
+        <div class="item">
+          <h4>Higher Secondary Certificate (HSC)</h4>
+          <span class="date">2016</span>
+          <p>Bonne Nehru Higher Secondary School, Thirukkanur &mdash; 90.58%</p>
+        </div>
+        <div class="item">
+          <h4>SSLC</h4>
+          <span class="date">2014</span>
+          <p>Bonne Nehru Higher Secondary School, Thirukkanur &mdash; 93.8%</p>
+        </div>
+      </div>
+      <p class="note" style="margin-top:22px">Languages: Tamil, English</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h3 class="section-title">Contact</h3>
+      <p class="lead">Open to new opportunities. Let's talk.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:rajeshg160399@gmail.com">rajeshg160399@gmail.com</a>
+        <a class="btn" href="https://www.linkedin.com/in/rajesh-balamurugan-9116a6203" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/rajeshg160399-git" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Rajesh B &middot; Puducherry, India &middot; +91 70946 82761</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
